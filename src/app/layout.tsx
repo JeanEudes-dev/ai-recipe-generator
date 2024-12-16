@@ -21,13 +21,19 @@ const Layout = ({ children }: LayoutProps) => {
             <nav>
               <ul className="flex space-x-4 text-sm">
                 <li className="group">
-                  <Link href="/" className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300">Home</Link>
+                  <Link className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300" href="/">
+                    Home
+                  </Link>
                 </li>
                 <li className="group">
-                  <Link href="/about" className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300">About</Link>
+                  <Link className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300" href="/about">
+                    About
+                  </Link>
                 </li>
                 <li className="group">
-                  <Link href="/contact" className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300">Contact</Link>
+                  <Link className="relative after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:origin-left after:transition-transform duration-300" href="/contact">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -51,10 +57,14 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="container mx-auto text-center">
             <ul className="flex justify-center space-x-6 mb-4">
               <li>
-                <Link href="/privacy" className="text-sm hover:text-gray-400">Privacy Policy</Link>
+                <Link  className="text-sm hover:text-gray-400" href="/privacy">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm hover:text-gray-400">Terms of Service</Link>
+                <Link href="/terms"  className="text-sm hover:text-gray-400">
+                  Terms of Service
+                </Link>
               </li>
             </ul>
             <p className="text-sm">&copy; {new Date().getFullYear()} AI Recipe Hub. All rights reserved.</p>

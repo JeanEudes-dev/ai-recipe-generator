@@ -1,5 +1,6 @@
-'use client'
+'use client';
 
+import FeaturedRecipes from "./components/FeaturedRecipes";
 import { FeaturesSection } from "./components/FeaturesSection";
 import { HeroSection } from "./components/HeroSection";
 import { RecipeSearchSection } from "./components/RecipeSearchSection";
@@ -15,6 +16,9 @@ const HomePage = () => {
 
       {/* Recipe Search Section */}
       <RecipeSearchSection />
+
+      {/* Featured Recipes Section */}
+      <FeaturedRecipes />
     </div>
   );
 };
